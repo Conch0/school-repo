@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html>
+<php>
+<title>Terps4Food.css </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Geogia Bold", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("Terps4Food.jpg");
+    min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-bottomleft">
+  </div>
+  <div class="terps-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:200px">Terps<br>4FOOD</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
+  </div>
+</header>
+
+<!-- Menu Container and login -->
+
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-large" style="margin-bottom:64px">Terps4Food's mission is to provide affordable food purchases to any fearless terp.</h1>
+    <!--umd logo image-->
+    <img src="umd.jpeg" alt="umd logo" width="200" height="200"margin-left="auto" margin-right="auto">
+
+    <!-- PHP-->
+    <form action="login.php" method="post" class="w3-container w3-medium w3-padding-24 w3-round">
+    <br>
+
+<h1 class "w3-container w3-right">Existing User</h1>
+      <h1 class "w3-container w3-right"> University ID</h1> <span><input class = "w3-input w3-right" type "text" style="width:20%"></span></h1>
+        <input class = "w3-input w3-bottomleft" type="text" style="width:30%" value="UserName" name = "User"></input>
+        <input class = "w3-input w3-bottomleft" type="text"  style="width:30%" value="PassWord" name = "Pass"></input>
+        <input class = "w3-button w3-left w3-white w3-panel w3-topbar w3-bottombar w3-border-grey" input type="button" value="submit" name="submit"></input>
+
+    </form>
+
+<!--
+<?php
+     mysql_connect("localhost","root","");
+     mysql_select_db("mydb"); //our database name is add here
+
+     if(isset($_POST['submit']))
+     {
+       $User = $_POST['User'];
+       $Pass = $_POST['Pass'];
+
+       $query = "Insert into Login(Username,Password) values ('$User', ''$Pass')";
+       if(mysql_query($query)) //run the query
+       {
+         echo "your log is inserted in the database";
+       }
+     }
+?>
+-->
+  <!-- Specials tab structure-->
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Specials </div>
+      </a>
+
+    <!-- All of the Resturants tab structure-->
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">All Of The Restaurants</div>
+      </a>
+
+      <!-- Happy hour throughout the week tab structure-->
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Happy Hour Throughout the Week</div>
+      </a>
+    </div>
+
+    <!-- Within Special Week tab-->
+    <!-- LOTSA button-->
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>LOTSA</b>
+        <!-- Rating for Specials ->
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 point"> 5 Point</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 point"> 4 Point</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 point"> 3 Point</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 point"> 2 Point</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black " value = "1 point"> 1 Point</span>
+      -->
+      </h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+    <!-- Chick Fil A button -->
+      <h1><b>Chick Fil A</b>
+        <!--Rating for Specials
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+        -->
+      </h1>
+      <p class="w3-text-grey">description</p>
+      <hr>
+
+      <!-- Apple Bees button-->
+      <h1><b>Apple Bees</b>
+        <!-- Rating for Specials
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+      -->
+      </h1>
+      <p class="w3-text-grey">description</p>
+      <hr>
+
+      <!-- Cornerstone button -->
+      <h1><b>CornerStone</b>
+        <!--Rating for Specials
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+      -->
+      </h1>
+      <p class="w3-text-grey">description</p>
+      <hr>
+    </div>
+
+    <!-- Within All of the Resturants tab-->
+    <!-- Chick Fil a button and description-->
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Chick Fil a</b>
+        <!--Overall Rating -->
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+      </h1>
+      <p class="w3-text-grey">
+        <!--https://www.chick-fil-a.com/About/Who-We-Are-->
+        "We should be about more than just selling chicken. We should be a part
+        of our customers' lives and the communities in which we serve."
+      </p>
+      <hr>
+
+    <!-- Marathon Deli button and description-->
+      <h1><b>Marathon Deli </b>
+        <!-- Overall Rating-->
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+      </h1>
+      <p class="w3-text-grey">
+        <!-- https://www.marathondelimd.com/-->
+        "We are pleased to be part of College Park for over 30 years and to be
+        voted the 'Best Gyro' in the area! We appreciate your patronage and hope
+        to see you soon! Thank you! George & Maria"
+      </p>
+      <hr>
+
+      <!-- Lotsa button and description-->
+      <h1><b>Lotsa</b>
+        <!--Overall Rating-->
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+      </h1>
+      <p class="w3-text-grey"> "Our pizzas are not the typical baked pizza. Only
+        our specialty stone-fired ovens from Italy can deliver that addictively
+        crisp yet chewy crust with smoky accent. Top off your custom pizza with
+        one of our delicious drizzles for even more flavor!" </p>
+      <hr>
+
+      <!-- Ivy Noodles button and description-->
+      <h1><b>Ivy Noodles</b>
+        <!--Overall Rating-->
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+       </h1>
+      <p class="w3-text-grey">
+        <!--https://www.ivynoodlescollegepark.com/aboutus.aspx-->
+        "Ivy Noodles offers delicious dining, takeout and felivery to College
+        Park, MD. Ivy Noodles is a cornerstone in the College Park community
+        and has been recognized outstanding Chinese cuisine, excellent service
+        and friendly staff. Our Chinese restaurant is known for its modern
+        interpretation of classic dishes and its insistence on only using high
+        quality fresh ingredients. "
+      </p>
+      <hr>
+
+      <!-- Chipotle button and description-->
+      <h1><b>Chipotle</b>
+        <!--Overall Rating-->
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+       </h1>
+      <p class="w3-text-grey">
+        <!-- https://locations.chipotle.com/md/college-park/7332-baltimore-ave-->
+        "The Chipotle in College Park, MD offers fresh, real ingredients and
+        specializes in custom burrito bowls, burritos, tacos and salads either
+        that you can cater for your next large events or order online and enjoy
+        a meal without the wait."
+      </p>
+
+      <!-- Kang nam BBQ button and description-->
+      <h1><b>Kangnam BBQ</b>
+        <!--Overall Rating-->
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+       </h1>
+      <p class="w3-text-grey">
+        <!-- http://kangnambbqusa.com/ -->
+        "KANG NAM BBQ serves authentic Korean dishes and grill food right at
+        your table! Korean refers to the Korean method of roasting beef, pork,
+        chicken, or other types of meat. Such dishes are often prepared at <thead>
+          diner's table on a gas or charcoal grills that are built into the table
+          itself. Korean resturants that do not have built-n grills provide
+          portable stoves for diners to use at their tables."
+        </thead>"
+      </p>
+
+      <!-- Jason's Deli button and description-->
+      <h1><b>Jason's Deli</b>
+        <!--Overall Rating-->
+        <<span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+       </h1>
+      <p class="w3-text-grey">
+        <!-- https://www.jasonsdeli.com/restaurants/college-park-deli-->
+        " Honored as the best family resturant in America by <i>Parents <i> magazine,
+        we're famous for delicious sandwiches, crisp salads, and more quick,
+        quality meals made with fresh ingredients and no artifical trans fat,
+        MSG, high-fructose corn syrup, or artifical colors and dyes!"
+      </p>
+
+      <!-- Panda Express button and description-->
+      <h1><b>Panda Express</b>
+        <!--Overall Rating-->
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+       </h1>
+      <p class="w3-text-grey">
+        <!--https://www.pandaexpress.com/ourfamilystory/about -->
+        "From our world-famous orange chicken to our health-minded work smart
+        seletions, Panda Express defines American Chinese cuisine. Our bold
+        flavors and fresh ingredients are freshly prepared, every day."
+      </p>
+
+      <!-- Moby Dick button and description-->
+      <h1><b>Moby Dick</b>
+        <!--Overall Rating-->
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+       </h1>
+      <p class="w3-text-grey">
+        <!-- https://www.mobyskabob.com/-->
+        "From our slow braised stews to our flame-grilled Persian kabobs, fresh
+        pita, and attentive customer service, Moby Disk House of Kabob is based
+        on quality, taste, reputation and relationships."
+      </p>
+
+      <!-- Taco Bell button and description-->
+      <h1><b>Taco Bell</b>
+        <!--Overall Rating-->
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+       </h1>
+      <p class="w3-text-grey">
+        <!-- https://www.tacobell.com/nutrition-->
+        "Today, we continue to provide the boldest and freshest flavors - food
+        that's customizable and fits your lifestyle, with a commitment to never
+        compromise on flavor. Whether you're looking for vegetarian, made without
+        gluten, high protein, lower calorie/lower fat, in the mood for something
+        indulgent, or all of the above, Taco Bell as food for all."
+      </p>
+
+      <!-- Kung Fu Tea button and description-->
+      <h1><b>Kung Fu Tea</b>
+        <!--Overall Rating-->
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+       </h1>
+      <p class="w3-text-grey">
+        <!-- https://www.kungfutea.com/about-kung-fu-tea &
+        https://www.kungfutea.com/what-is-bubble-tea-->
+        " Unrivaled quality, utmost attention to detail and unquestionable
+        authenticity, that is the Kung Fu Tea culture. At Kung Fu Tea, customers
+        can go classic tea or slush, milk tea or punch - and more. All drinks
+        can be customized in three steps: Topping Level, Sugar Level, and Ice
+        Level. Toppings range from bubbles and popping bubbles to different
+        types of beans and jellies."
+      </p>
+
+      <!-- Subway button and description-->
+      <h1><b>Subway</b>
+        <!--Overall Rating-->
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+       </h1>
+      <p class="w3-text-grey">
+        <!-- https://www.subway.com/en-US/AboutUs-->
+        "We're true to our roots. Subway started small in the USA before
+        becoming the largest string of sandwich shops in the world. Impact comes
+        in many forms. See how we're taking a fresh look at nutrition, community
+        and the environment."
+      </p>
+
+      <!-- Pho D'lite button and description-->
+      <h1><b>Pho D'lite</b>
+        <!--Overall Rating-->
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+       </h1>
+      <p class="w3-text-grey">
+        <!-- http://phodlite.com/about/-->
+        "A new take on traditional South East Asian cusine with amazing food and
+        friendly staff. Our restaurants are based on three simple principles:
+        fresh ingredients, exceptional service and a dedication to always improve.
+        We appreciate your support as we continue to strive for excellence and
+        your complete satisfaction"
+      </p>
+    </div>
+
+    <!-- Within Happy Hour tab-->
+    <!-- Looney's Pub button and description-->
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Looney's Pub</b>
+        <!--HH Rating
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+        -->
+      </h1>
+      <p class="w3-text-grey">Description</p>
+      <hr>
+
+      <!-- Cornerstone button and description-->
+      <h1><b>CornerStone</b>
+        <!--Rating for HH
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+        -->
+      </h1>
+      <p class="w3-text-grey">Description</p>
+      <hr>
+
+      <!-- Terrapin Turf button and description-->
+      <h1><b>Terrapin's Turf</b>
+        <!--Rating for HH
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+        -->
+       </h1>
+      <p class="w3-text-grey">Description</p>
+      <hr>
+
+      <!-- RJ Bentley's button and description-->
+      <h1><b>RJ Bentley's</b>
+        <!--Rating for HH
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "5 Points"> 5 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "4 Points"> 4 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "3 Points"> 3 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "2 Points"> 2 Points</span>
+        <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "1 Points"> 1 Points</span>
+        -->
+      </h1>
+      <p class="w3-text-grey">Description</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+
+
+<!-- Image of location/map -->
+
+<!-- Contact -->
+
+
+<!-- Footer -->
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
