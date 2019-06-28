@@ -1,6 +1,7 @@
 # Food For Terps
 
-Group Members: 
+Group Members:
+
 Jin Young Oh - jon30@terpmail.umd.edu
 
 Justin Song - justinxsong@gmail.com
