@@ -2,8 +2,11 @@
 
 Group Members: 
 Jin Young Oh - jon30@terpmail.umd.edu
+
 Justin Song - justinxsong@gmail.com
+
 Connie Cho - connie.y.cho7@gmail.com
+
 Mimika Thapa - mimikathapamagar@gmail.com
 
 This project was created in order to help students and the community of College Park, Maryland. 
