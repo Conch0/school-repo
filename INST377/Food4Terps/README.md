@@ -14,3 +14,5 @@ This project was created in order to help students and the community of College 
 This project was started due to the team members indecisiveness of not knowing what to eat next, but 
 as we got further along the project, we believed that it would be a great tool to use for the College
 Park community because it allows the community to know about the restaurants around the city. 
+
+Here is the link for the original submission of the project (https://github.com/Food4Terps/Final-Report)
